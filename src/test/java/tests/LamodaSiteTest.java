@@ -29,7 +29,7 @@ public class LamodaSiteTest extends TestBase {
     }
 
     @EnumSource(Links.class)
-    @DisplayName("Кнопки меню должны содежрать ссылки")
+    @DisplayName("Кнопки меню должны содержать ссылки")
     @ParameterizedTest(name = "Проверка ссылки для кнопки {0}")
     void menuItemShouldContainExpectedUrl(Links links) {
         startPageSite.checkButtonContainUrl(links);
