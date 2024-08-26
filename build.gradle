@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.mrnatsumi8'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+
+dependencies {
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.10.1",
+            "com.codeborne:selenide:7.3.3"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
